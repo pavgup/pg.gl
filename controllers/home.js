@@ -7,3 +7,9 @@ exports.index = (req, res) => {
     title: 'Home'
   });
 };
+
+exports.newHome = (req, res) => {
+  res.render('new-home', {
+    title: 'Lading Page'
+  });
+};
