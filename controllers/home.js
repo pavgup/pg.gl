@@ -3,7 +3,7 @@
  * Home page.
  */
 exports.index = (req, res) => {
-  res.render('home', {
+  res.render('call-1', {
     title: 'Donate Now!'
   });
 };
