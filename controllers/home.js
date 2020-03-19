@@ -8,8 +8,8 @@ exports.index = (req, res) => {
   });
 };
 
-exports.newHome = (req, res) => {
-  res.render('new-home', {
+exports.demo = (req, res) => {
+  res.render('demo', {
     title: 'Lading Page'
   });
 };
