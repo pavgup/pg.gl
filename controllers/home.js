@@ -19,3 +19,9 @@ exports.call1 = (req, res) => {
     title: 'Lading Page'
   });
 };
+
+exports.providers = (req, res) => {
+  res.render('providers', {
+    title: 'Provider Donations'
+  });
+};
