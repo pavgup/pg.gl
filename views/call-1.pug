@@ -13,7 +13,7 @@ head
     .content
       h1 Step up! Donate masks, gloves, and gowns now!
       p.major
-        | Clinicians 
+        | Healthcare providers 
         a(href='https://www.wsj.com/articles/hospitals-facing-coronavirus-are-running-out-of-masks-other-key-equipment-11584525604') around 
         a(href='https://www.npr.org/sections/goatsandsoda/2020/03/16/814929294/covid-19-has-caused-a-shortage-of-face-masks-but-theyre-surprisingly-hard-to-mak') the 
         a(href='https://www.nytimes.com/2020/03/18/health/coronavirus-test-shortages-face-masks-swabs.html') world 
@@ -62,3 +62,11 @@ script(src='/js/browser.min.js')
 script(src='/js/breakpoints.min.js')
 script(src='/js/util.js')
 script(src='/js/main.js')
+// Global site tag (gtag.js) - Google Analytics
+script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-161190608-1')
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-161190608-1');
+
