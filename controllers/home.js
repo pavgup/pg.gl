@@ -13,3 +13,9 @@ exports.demo = (req, res) => {
     title: 'Lading Page'
   });
 };
+
+exports.call1 = (req, res) => {
+  res.render('call1', {
+    title: 'Lading Page'
+  });
+};
