@@ -15,7 +15,7 @@ exports.demo = (req, res) => {
 };
 
 exports.call1 = (req, res) => {
-  res.render('call1', {
+  res.render('call-1', {
     title: 'Lading Page'
   });
 };
