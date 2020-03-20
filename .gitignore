@@ -16,9 +16,6 @@ tmp
 # Optional npm cache directory
 .npm
 
-#Build
-public/css/main.css
-.nyc_output/*
 
 # API keys and secrets
 .env
