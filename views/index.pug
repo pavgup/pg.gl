@@ -1,12 +1,14 @@
 doctype html
-//
-  Dimension by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 head
   title Give PPE, Give life
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+  meta(name='twitter:card' content='summary_large_image')
+  meta(name='twitter:site' content='@pavgup')
+  meta(name='twitter:creator' content='@pavgup')
+  meta(name='twitter:title' content='Receive or Donate #COVID19 Supplies')
+  meta(name='twitter:description' content="Lets take our unused medical supplies and shift them to hospitals in desperate need! Providers, please tell us what you need and where you need it, we're listening!")
+  meta(name='twitter:image' content='/images/maskup-twitter-splash.png?uniqueid=charlie123')
   link(rel='stylesheet' href='/css/main.css')
   noscript
     link(rel='stylesheet' href='/css/noscript.css')
@@ -14,20 +16,25 @@ head
 #wrapper
   // Header
   header#header
-    img(src="/images/303446.svg", width=100, height=100 style="filter: invert(3%) sepia(10%) saturate(10%) brightness(50%) opacity(0.5);")
+    img(src="/images/303446.svg", width=100, height=100 style="filter: invert(3%) sepia(10%) saturate(90%) brightness(40%) opacity(0.9);")
     .content
       .inner
-        h1 Step up! Donate PPE and demand PPE NOW!
-        p We are a small but growing group of doctors, administrators, consultants, software engineers, and marketers working together to organize and deliver PPE (personal protective equipment) where its most needed.
-        p We’re ordinary Americans stepping up to solve our drastic shortage problems as creatively and efficiently as we can — and we need your support ASAP.
-        a(href="/learn-more") Learn more.
+        h1 Donate to hospitals now!
+        p
+          | We are a group of volunteers with a simple mission: we match 
+          a(href='#donateppe') donors
+          |  with 
+          a(href='#demandppe') providers
+          |  and we make shipping _FREE_. Your help answers the call for 36 hospital _systems_ around the planet earth.
     nav
       ul
         li
-          a(href='#donateppe') Donate PPE
+          a(href='#donateppe') DONATE MASKS NOW!
         li
+          a(href='https://twitter.com/share?url=https%3A%2F%2Fpg.gl&text=Let%27s+join+the+%23COVID19+fight%21+Do+you+have+masks%2C+gowns%2C+sanitizer%2C+etc.+that+could+be+donated+%28with+zero+cost+shipping%29+to+health+systems+around+the+country%3F+%23maskup+here!') Can't Donate? Share!
+          script(async='' src='https://platform.twitter.com/widgets.js' charset='utf-8')
         li
-          a(href='#demandppe') Demand PPE</li>
+          a(href='#demandppe') Provider? CLICK HERE.</li>
   // Main
   #main
     // donateppe
@@ -326,6 +333,8 @@ head
       a(href='https://github.com/pavgup/pg.gl') Steal this.
       |  Design: 
       a(href='https://html5up.net') HTML5 UP
+      | . Help us on 
+      a(href='https://join.slack.com/t/covidmaskup/shared_invite/zt-crn13ypd-pm9lKIT61HW4ZhXKWt5ihw') Slack
       | .
 // BG
 #bg
@@ -335,3 +344,11 @@ script(src='/js/browser.min.js')
 script(src='/js/breakpoints.min.js')
 script(src='/js/util.js')
 script(src='/js/main.js')
+// Global site tag (gtag.js) - Google Analytics
+script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-161190608-1')
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-161190608-1');
+

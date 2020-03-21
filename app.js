@@ -128,6 +128,11 @@ app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawes
  */
 app.get('/', homeController.index);
 app.get('/learn-more', homeController.learn_more);
+app.get("/providers", (req, res) => {
+
+    res.status(301).redirect("/#demandppe")
+
+})
 
 /**
  * Error Handler.
