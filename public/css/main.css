@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1178,6 +1181,60 @@ input, select, textarea {
 		}
 
 /* Wrapper */
+
+
+    #learnwrapper {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -moz-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        padding: 3rem 2rem;
+        z-index: 3;
+    }
+
+        #wrapper:before {
+            content: '';
+            display: block;
+        }
+
+        @media screen and (max-width: 1680px) {
+
+            #wrapper {
+                padding: 3rem 2rem;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #wrapper {
+                padding: 2rem 1rem;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #wrapper {
+                padding: 1rem;
+            }
+
+        }
 
 	#wrapper {
 		display: -moz-flex;
@@ -1264,7 +1321,6 @@ input, select, textarea {
 			-webkit-transition: opacity 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
-			position: relative;
 			margin-top: 3.5rem;
 		}
 
